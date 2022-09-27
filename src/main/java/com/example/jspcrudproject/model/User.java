@@ -20,7 +20,7 @@ public class User {
         this.country = country;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
