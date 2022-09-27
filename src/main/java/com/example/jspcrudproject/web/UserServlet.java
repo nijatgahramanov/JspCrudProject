@@ -61,6 +61,11 @@ public class UserServlet extends HttpServlet {
                 }
                 break;
             default:
+                try {
+                    listUser(request, response);
+                } catch (SQLException ex) {
+                    ex.printStackTrace();
+                }
                 break;
         }
     }
